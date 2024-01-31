@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { AnimalCtrl } from '../../shared/Controllers/animal.ctrl';
 
 @Component({
   selector: 'app-fish',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './fish.component.scss'
 })
 export class FishComponent {
+
+  @Input() ctrl: AnimalCtrl;
 
 }

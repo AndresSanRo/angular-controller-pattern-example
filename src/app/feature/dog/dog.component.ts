@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { AnimalCtrl } from '../../shared/Controllers/animal.ctrl';
 
 @Component({
   selector: 'app-dog',
@@ -9,4 +10,6 @@ import { Component } from '@angular/core';
 })
 export class DogComponent {
 
+  @Input() ctrl: AnimalCtrl;
+  
 }
