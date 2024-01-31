@@ -1,7 +1,7 @@
 import { AnimalCtrl } from "../../shared/Controllers/animal.ctrl";
 
-export class DogImpl extends AnimalCtrl {
-    override move() {
+export class DogImpl implements AnimalCtrl {
+    move() {
         alert('Dog runs!');
     }
 }
