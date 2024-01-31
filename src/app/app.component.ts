@@ -6,11 +6,12 @@ import { FishComponent } from './feature/fish/fish.component';
 import { BirdImpl } from './feature/bird/bird.impl';
 import { FishImpl } from './feature/fish/fish.impl';
 import { DogImpl } from './feature/dog/dog.impl';
+import { MoleComponent } from './feature/mole/mole.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, DogComponent, FishComponent, BirdComponent],
+  imports: [RouterOutlet, DogComponent, FishComponent, BirdComponent, MoleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
